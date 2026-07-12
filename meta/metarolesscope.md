@@ -118,13 +118,11 @@ FC-5 критически важна в условиях:
 
 - **ML Engineer** — как роль, ответственная за эксперименты, модели, quality analysis, Registry и интеграцию ML в приложение.
 - **MLOps Engineer** — как роль, ответственная за инфраструктуру, CI/CD, deployment, monitoring, drift management и эксплуатацию модели в production.
-- **AI Architect** — как роль, ответственная за системный дизайн, архитектурные решения и согласование технического стека с нефункциональными требованиями.
 
 В качестве поддерживающих ролей дисциплина также частично покрывает:
 - **Data Engineer** — через DataOps, ETL/ELT, feature store и data quality;
-- **Data Analyst** — через EDA, error analysis и интерпретацию результатов;
-- **AI Security Engineer** — через security/governance/fairness/XAI блоки.
-
+- **Data Analyst** — через EDA, error analysis и интерпретацию результатов.
+- 
 ## Синергия выбранных компетенций
 
 Выбор LC-2 + LC-3 + LC-5 + FC-5 даёт целостный инженерный профиль выпускника дисциплины.

@@ -121,8 +121,9 @@ FC-5 критически важна в условиях:
 
 В качестве поддерживающих ролей дисциплина также частично покрывает:
 - **Data Engineer** — через DataOps, ETL/ELT, feature store и data quality;
-- **Data Analyst** — через EDA, error analysis и интерпретацию результатов.
-- 
+- **Data Analyst** — через EDA, error analysis и интерпретацию результатов;
+- **AI Security Engineer** — через security/governance/fairness/XAI блоки.
+
 ## Синергия выбранных компетенций
 
 Выбор LC-2 + LC-3 + LC-5 + FC-5 даёт целостный инженерный профиль выпускника дисциплины.

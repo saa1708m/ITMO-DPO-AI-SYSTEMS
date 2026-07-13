@@ -42,11 +42,11 @@
 ## 📊 Итоговая схема
 
 ИИС (задачи) → Дисциплина (модули) → КРМ (роли) → ФОС (оценочные средства)
-- Подготовка данных и baseline ──→ Модуль 1 ──→ ML Engineer / Data Analyst ──→ ЛР: EDA + DVC
-- Воспроизводимый эксперимент ──→ Модуль 2 ──→ ML Engineer ──→ ЛР: MLflow + Registry
-- Архитектура ML-системы ──→ Модуль 3 ──→ AI Architect / ML Engineer ──→ Проект + защита
-- Развёртывание ML-сервиса ──→ Модуль 4 ──→ MLOps Engineer ──→ ЛР: Docker + serving
-- Эксплуатация и мониторинг ──→ Модуль 5 ──→ MLOps Engineer ──→ ЛР: CI/CD + monitoring, проект
+- Подготовка данных и baseline → Модуль 1 → ML Engineer / Data Analyst → ЛР: EDA + DVC
+- Воспроизводимый эксперимент → Модуль 2 → ML Engineer → ЛР: MLflow + Registry
+- Архитектура ML-системы → Модуль 3 → AI Architect / ML Engineer → Проект + защита
+- Развёртывание ML-сервиса → Модуль 4 → MLOps Engineer → ЛР: Docker + serving
+- Эксплуатация и мониторинг → Модуль 5 → MLOps Engineer → ЛР: CI/CD + monitoring, проект
 
 ## 🎓 Примерные темы проектных работ
 

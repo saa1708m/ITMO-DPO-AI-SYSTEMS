@@ -1,0 +1,8 @@
+stages:
+  preprocess_beijing:
+    cmd: python scripts/preprocess_beijing.py
+    deps:
+      - ../../datasets/module_02/beijing_air_quality_learning.csv
+      - scripts/preprocess_beijing.py
+    outs:
+      - data/beijing_air_quality_processed.csv

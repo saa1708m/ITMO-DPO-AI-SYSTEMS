@@ -1,0 +1,45 @@
+{
+  "title": "Dry Beans Service Overview",
+  "uid": "dry-beans-dashboard",
+  "schemaVersion": 38,
+  "version": 1,
+  "tags": ["mlops", "module7"],
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Service Health",
+      "id": 1,
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "up{job=\"dry-beans-api\"}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Request Rate",
+      "id": 2,
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total{job=\"dry-beans-api\"}[5m]))",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Request Latency (p95)",
+      "id": 3,
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job=\"dry-beans-api\"}[5m])) by (le))",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}

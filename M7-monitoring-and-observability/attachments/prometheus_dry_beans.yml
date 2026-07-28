@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "dry-beans-api"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["dry-beans-api:8000"]
+
+  # Заготовка под экспортера, который анализирует дрейф по
+  # steel_energy_drift.csv (module_07) и отдаёт метрики
+  - job_name: "steel-energy-drift"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["steel-energy-drift-exporter:9100"]

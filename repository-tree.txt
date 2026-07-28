@@ -118,7 +118,7 @@ ITMO-DPO-AI-SYSTEMS-main
 │   ├── students/
 │   │   └── README.md
 │   ├── teachers-assessment/
-	├── guide.md
+│	│	├── guide.md
 │   │   └── README.md
 │   └── teachers-resources/
 │       └── README.md

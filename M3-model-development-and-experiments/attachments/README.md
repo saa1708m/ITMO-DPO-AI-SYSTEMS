@@ -5,7 +5,7 @@
 
 ## Состав
 
-- `train_mlflow_dry_beans.py` — пример скрипта эксперимента с логированием   параметров, метрик и модели в MLflow по датасету [resources/datasets/module_03/dry_bean_learning.csv](resources/datasets/module_03/dry_bean_learning.csv).
+- `train_mlflow_dry_beans.py` — пример скрипта эксперимента с логированием параметров, метрик и модели в MLflow по датасету [../../resources/datasets/module_03/](../../resources/datasets/module_03/) (`dry_bean_learning.csv`).
 
 ## Назначение
 
@@ -14,4 +14,4 @@
 - настройки MLflow Tracking;
 - логирования параметров и метрик эксперимента;
 - сохранения модели в артефактном хранилище;
-- демонстрации воспроизводимого экспериментального контура для   многоклассовой задачи (dry beans).
+- демонстрации воспроизводимого экспериментального контура для многоклассовой задачи (dry beans).

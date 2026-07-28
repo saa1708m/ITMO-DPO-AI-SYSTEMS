@@ -1,0 +1,176 @@
+ITMO-DPO-AI-SYSTEMS-main
+│
+├── .gitignore
+├── CHANGELOG.md
+├── FOS_BRIEF.md
+├── LICENSE.md
+├── README.md
+│
+├── data/
+│   └── readme.md
+│
+├── docs/
+│   ├── quality-checklist.md
+│   ├── readme.md
+│   └── rpd.md
+│
+├── Exam/
+│   ├── readme.md
+│   └── attachments/
+│       └── .gitkeep
+│
+├── M1-introduction-and-architecture/
+│   ├── readme.md
+│   ├── case_1.md
+│   ├── lab1-1.md
+│   ├── lab1-2.md
+│   ├── test_1.1.md
+│   └── test_1.2.md
+│
+├── M2-data-management-and-versioning/
+│   ├── readme.md
+│   ├── lab2-1.md
+│   ├── lab2-2.md
+│   ├── test_2.1.md
+│   ├── test_2.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── dvc.yaml
+│       ├── eda_beijing.ipynb
+│       └── preprocess_beijing.py
+│
+├── M3-model-development-and-experiments/
+│   ├── readme.md
+│   ├── lab3-1.md
+│   ├── lab3-2.md
+│   ├── test_3.1.md
+│   ├── test_3.2.md
+│   └── attachments/
+│       ├── README.md
+│       └── train_mlflow_dry_beans.py
+│
+├── M4-containerization/
+│   ├── readme.md
+│   ├── lab4-1.md
+│   ├── lab4-2.md
+│   ├── test_4.1.md
+│   ├── test_4.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── app_dry_beans.py
+│       ├── docker-compose.yml
+│       ├── Dockerfile.app
+│       ├── predict_dry_beans.py
+│       └── requirements.txt
+│
+├── M5-CICD-and-Orchestration/
+│   ├── readme.md
+│   ├── case_5.md
+│   ├── lab5-1.md
+│   ├── lab5-2.md
+│   ├── test_5.1.md
+│   ├── test_5.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── airflow_retraining_dag.py
+│       └── github-actions-ci-example.yml
+│
+├── M6-serving-and-scaling-ml/
+│   ├── readme.md
+│   ├── lab6-1.md
+│   ├── lab6-2.md
+│   ├── test_6.1.md
+│   ├── test_6.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── lab_6_1_rest_api_model.ipynb
+│       └── lab_6_2_kubernetes_canary.ipynb
+│
+├── M7-monitoring-and-observability/
+│   ├── readme.md
+│   ├── case_7.md
+│   ├── lab7-1.md
+│   ├── lab7-2.md
+│   ├── test_7.1.md
+│   ├── test_7.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── grafana_dry_beans_dashboard.json
+│       └── prometheus_dry_beans.yml
+│
+├── M8-security-governance-responsible-ai/
+│   ├── readme.md
+│   ├── lab8-1.md
+│   ├── lab8-2.md
+│   ├── test_8.1.md
+│   ├── test_8.2.md
+│   └── attachments/
+│       ├── README.md
+│       ├── lab_8_1_secrets_rbac.ipynb
+│       └── lab_8_2_bias_audit.ipynb
+│
+├── meta/
+│   ├── inputs.md
+│   └── rolesscope.md
+│
+├── methodical-guidelines/
+│   ├── README.md
+│   ├── students/
+│   │   └── README.md
+│   ├── teachers-assessment/
+│   │   └── README.md
+│   └── teachers-resources/
+│       └── README.md
+│
+├── other/
+│   └── README.md
+│
+├── Project/
+│   ├── README.md
+│   ├── questions-for-defense.md
+│   ├── topics.md
+│   └── attachments/
+│       ├── case1-ai-assistant.md
+│       ├── case2-document-analysis.md
+│       ├── case3-industrial-monitoring.md
+│       ├── case4-rag-system.md
+│       ├── case5-procurement-agent.md
+│       ├── case6-hr-recommendation.md
+│       ├── case7-demand-forecasting.md
+│       ├── case8-voice-assistant.md
+│       ├── case9-video-analytics.md
+│       └── case10-synthetic-data.md
+│
+├── resources/
+│   ├── README.md
+│   ├── benchmarks/
+│   │   └── README.md
+│   ├── datasets/
+│   │   ├── README.md
+│   │   ├── LICENSE.md
+│   │   ├── module_02/
+│   │   │   └── README.md
+│   │   ├── module_03/
+│   │   │   └── README.md
+│   │   ├── module_07/
+│   │   │   └── README.md
+│   │   └── module_08/
+│   │       └── README.md
+│   ├── llm-prompts/
+│   │   └── README.md
+│   ├── other/
+│   │   └── README.md
+│   ├── papers/
+│   │   └── README.md
+│   ├── problem-banks/
+│   │   └── README.md
+│   ├── software/
+│   │   └── python-libs/
+│   │       └── README.md
+│   ├── test-banks/
+│   │   └── README.md
+│   └── textbooks/
+│       └── README.md
+│
+└── team/
+    └── README.md

@@ -67,6 +67,7 @@
 | [./lab7-2.md](./lab7-2.md) | Лабораторная работа | Задание, порядок выполнения и требования к отчёту по лабораторной работе 7.2 |
 | [./case_7.md](./case_7.md) | Кейс | Кейс по анализу инцидента и сигналов деградации |
 | [./readme.md](./readme.md) | Методический файл | Навигация по материалам модуля и описание системы оценивания |
+| [./attachments/](./attachments/) | Вспомогательные файлы | Примеры конфигураций Prometheus и Grafana для мониторинга ML-сервиса |
 
 ---
 
@@ -120,9 +121,13 @@
 ```text
 M7-monitoring-and-observability/
 ├── readme.md
-├── 7-1.md
-├── 7-2.md
+├── test_7.1.md
+├── test_7.2.md
 ├── lab7-1.md
 ├── lab7-2.md
-└── case.md
+├── case_7.md
+└── attachments/
+    ├── README.md
+    ├── grafana_dry_beans_dashboard.json
+    └── prometheus_dry_beans.yml
 ```

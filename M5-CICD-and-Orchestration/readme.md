@@ -65,8 +65,9 @@
 | [./test_5.2.md](./test_5.2.md) | Тест | КИМ по теме 5.2 «Оркестрация ML-пайплайнов» |
 | [./lab5-1.md](./lab5-1.md) | Лабораторная работа | Задание, порядок выполнения и требования к отчёту по лабораторной работе 5.1 |
 | [./lab5-2.md](./lab5-2.md) | Лабораторная работа | Задание, порядок выполнения и требования к отчёту по лабораторной работе 5.2 |
-| [./case)_5.md](./case_5.md) | Кейс | Кейс по анализу CI/CD и retraining pipeline |
+| [./case_5.md](./case_5.md) | Кейс | Кейс по анализу CI/CD и retraining pipeline |
 | [./readme.md](./readme.md) | Методический файл | Навигация по материалам модуля и описание системы оценивания |
+| [./attachments/](./attachments/) | Вспомогательные файлы | Примеры CI/CD конфигураций и DAG-пайплайнов |
 
 ---
 
@@ -120,9 +121,13 @@
 ```text
 M5-CICD-and-Orchestration/
 ├── readme.md
-├── 5-1.md
-├── 5-2.md
+├── test_5.1.md
+├── test_5.2.md
 ├── lab5-1.md
 ├── lab5-2.md
-└── case.md
+├── case_5.md
+└── attachments/
+    ├── README.md
+    ├── github-actions-ci-example.yml
+    └── airflow_retraining_dag.py
 ```

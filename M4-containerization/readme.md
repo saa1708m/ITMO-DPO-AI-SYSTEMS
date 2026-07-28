@@ -65,6 +65,7 @@
 | [./lab4-1.md](./lab4-1.md) | Лабораторная работа | Задание, порядок выполнения и требования к отчёту по лабораторной работе 4.1 |
 | [./lab4-2.md](./lab4-2.md) | Лабораторная работа | Задание, порядок выполнения и требования к отчёту по лабораторной работе 4.2 |
 | [./readme.md](./readme.md) | Методический файл | Навигация по материалам модуля и описание системы оценивания |
+| [./attachments/](./attachments/) | Вспомогательные файлы | Примеры Dockerfile, docker-compose и inference-сервиса |
 
 ---
 
@@ -120,6 +121,13 @@ M4-containerization/
 ├── readme.md
 ├── test_4.1.md
 ├── test_4.2.md
-├── lab_4.1.md
-└── lab_4.2.md
+├── lab4-1.md
+├── lab4-2.md
+└── attachments/
+    ├── README.md
+    ├── app_dry_beans.py
+    ├── Dockerfile.app
+    ├── docker-compose.yml
+    ├── predict_dry_beans.py
+    └── requirements.txt
 ```

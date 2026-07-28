@@ -368,8 +368,6 @@ P=\frac{N_{\text{правильных ответов}}}{N_{\text{заданий}
 ```text
 M8-Security-Governance-Responsible-AI/
 ├── readme.md
-├── 8-1.md
-├── 8-2.md
 ├── test_8.1.md
 ├── test_8.2.md
 ├── lab8-1.md

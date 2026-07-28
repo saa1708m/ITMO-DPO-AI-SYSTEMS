@@ -1,0 +1,67 @@
+version: "3.9"
+
+services:
+  minio:
+    image: minio/minio:RELEASE.2024-06-13T22-53-53Z
+    container_name: minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: mlops_minio_user
+      MINIO_ROOT_PASSWORD: mlops_minio_password
+    ports:
+      - "9000:9000"  # S3 API
+      - "9001:9001"  # Web-консоль MinIO
+    volumes:
+      - ./volumes/minio-data:/data
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow
+    depends_on:
+      - minio
+    environment:
+      # Хранилище метаданных (sqlite файл внутри тома)
+      BACKEND_STORE_URI: sqlite:////mlflow/artifacts/mlflow.db
+
+      # S3-compatible endpoint (MinIO)
+      MLFLOW_S3_ENDPOINT_URL: http://minio:9000
+      AWS_ACCESS_KEY_ID: mlops_minio_user
+      AWS_SECRET_ACCESS_KEY: mlops_minio_password
+
+      # Корень артефактов в S3/MinIO
+      ARTIFACT_ROOT: s3://mlflow-artifacts
+    command:
+      [
+        "mlflow",
+        "server",
+        "--backend-store-uri",
+        "sqlite:////mlflow/artifacts/mlflow.db",
+        "--default-artifact-root",
+        "s3://mlflow-artifacts",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "5000"
+      ]
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./volumes/mlflow:/mlflow/artifacts
+
+  dry-beans-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    container_name: dry-beans-api
+    depends_on:
+      - mlflow
+    environment:
+      # Путь к модели внутри контейнера
+      MODEL_PATH: /models/model.pkl
+      # При желании сюда же можно прокинуть URL MLflow для трекинга
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    ports:
+      - "8000:8000"
+    volumes:
+      # Монтируем модель, обученную в M3
+      - ../M3-model-development-and-experiments/attachments/models:/models:ro

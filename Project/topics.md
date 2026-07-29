@@ -27,10 +27,10 @@
 | Модуль | Компетенции | Что проверяется в проектах |
 |--------|-------------|---------------------------|
 | **Модуль 1** | LC-3.1, LC-5.1 | Архитектура платформы, роли, компоненты |
-| **Модуль 2** | LC-2.1, LC-2.3 | EDA, очистка, DVC, feature store |
-| **Модуль 3** | LC-2.1–2.3 | MLflow, Model Registry, HPO |
+| **Модуль 2** | LC-2.2 | EDA, очистка, DVC, feature store |
+| **Модуль 3** | LC-2.2 | MLflow, Model Registry, HPO |
 | **Модуль 4** | LC-5.1 | Docker, docker-compose |
 | **Модуль 5** | LC-5.2 | GitHub Actions, Airflow |
-| **Модуль 6** | LC-3.2, LC-5.3 | REST API, Kubernetes, HPA |
-| **Модуль 7** | LC-5.4 | Prometheus, Grafana, Evidently |
-| **Модуль 8** | LC-5.5 | Vault, RBAC, model cards |
+| **Модуль 6** | LC-3.1, LC-5.1| REST API, контейнеризация, Kubernetes, HPA |
+| **Модуль 7** | LC-5.2 | Мониторинг, Prometheus, Grafana, drift |
+| **Модуль 8** | LC-5.1 | Безопасность, Vault, RBAC, model cards |
